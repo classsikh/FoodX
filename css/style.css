@@ -1,0 +1,340 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* HEADER SEACTION STARTS */
+
+#navbar {
+    display: flex;
+    background-color: #ffc244;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#logo span {
+    
+    font-weight: bolder;
+    color: #00a082;
+    font-size: 20px;
+    font-family: cursive;
+}
+.menu {
+    display: flex;
+    gap: 15px;
+}
+#navbar ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    
+    color: #1d1d1d;
+    font-weight: bold;
+}
+#navbar ul li a:hover {
+    text-decoration: none;  
+    color: white;
+    font-weight: bold;
+}
+
+#navbar .btn {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: #00a082;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+   
+#navbar .btn:hover {
+    background: #00846B;
+    cursor: pointer;
+}
+
+/* HERO SEACTION STARTS */
+
+#home {
+    background-color: #ffc244;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;   
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    
+}
+.heading .h-primary {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 57px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight:300;
+}
+
+.heading .btn {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: #00a082;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    align-self:center;
+}
+
+.heading .btn:hover {
+    background: #00846B;
+    cursor: pointer;
+}
+.herovdo{
+    display: flex;
+}
+.herovdo video{
+    max-width: 350px;
+    
+}
+
+
+
+/* SERVICES SEACTION STARTS */
+
+#services {
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    padding-bottom: 60px;
+}
+
+#services .h2-ctr {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline 5px #ffc244;
+}
+
+
+#services .services-containers{
+    display: flex;
+    padding-top: 50px;
+}
+
+#services .services-containers .box{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+}
+
+#services .services-containers .box h3{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#services .services-containers .box p{
+    text-align: center;
+}
+
+#services .services-containers .box p span {
+    background-color: #ffc244;
+    border-color: #ffc244;
+    border-radius: 100px;
+}
+
+/* client-section SEACTION STARTS */
+
+.client {
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    background-color: #E9F8F5;
+}
+
+.client .h2-ctr {
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: underline 5px #00846B;
+    
+}
+
+.client .client-containers{
+    display: flex;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+}
+
+.client .client-containers .box{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+}
+
+.client .client-containers .box h3{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.client .client-containers .box p{
+    text-align: center;
+}
+
+.client .client-containers .box .btn{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: #00a082;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+   
+.client .client-containers .box .btn:hover{
+    background: #00846B;
+    cursor: pointer;
+}
+
+/*contact us */
+#contact{
+    background-color: #ffc244;
+    padding: 30px;
+}
+
+#contact .heading {
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: underline 5px #00846B;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 20px;
+margin-bottom: 10px;
+
+}
+
+.contact-brand span{
+    font-weight: bolder;
+    color: #00846B;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.contact-brand h4 {
+    font-weight: bolder;
+    color: #000;
+    font-size: 30px;
+    font-family: cursive;
+}
+.container .menu {
+display: flex;
+flex-direction: column;
+align-items: start;
+font-size: 20px;
+}
+.container .menu ul li{
+    
+    align-items: center;
+    list-style: none;
+
+}
+.container .menu ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #00846B;
+    font-weight: bold;
+}
+
+.contact-form {
+    background-color: #00846B;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 200px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffc244;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #ffc244;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
