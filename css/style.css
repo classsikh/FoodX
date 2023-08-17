@@ -6,13 +6,20 @@
 
 /* HEADER SEACTION STARTS */
 
-#navbar {
+.header {
     display: flex;
     background-color: #ffc244;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
+ 
+.hamburger{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    }
+
 #logo span {
     
     font-weight: bolder;
@@ -24,7 +31,7 @@
     display: flex;
     gap: 15px;
 }
-#navbar ul {
+.navbar ul {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -33,20 +40,20 @@
     
 }
 
-#navbar ul li a {
+.navbar ul li a {
     text-decoration: none;
     font-size: 15px;
     
-    color: #1d1d1d;
+    color: black;
     font-weight: bold;
 }
-#navbar ul li a:hover {
+.navbar ul li a:hover {
     text-decoration: none;  
-    color: white;
+    color: #00846B;
     font-weight: bold;
 }
 
-#navbar .btn {
+.navbar .btn {
     font-family: Arial, Helvetica, sans-serif, sans-serif;
     color: white;
     font-size: 15px;
@@ -57,7 +64,7 @@
     border-radius: 20px;
 }
    
-#navbar .btn:hover {
+.navbar .btn:hover {
     background: #00846B;
     cursor: pointer;
 }
@@ -338,3 +345,166 @@ font-size: 20px;
     transition: transform 0.3s ease-in-out;
   }
   
+
+  @media only screen and (max-width: 748px)
+{  
+    .header {
+        position: relative;
+    }
+    
+      .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        gap: 3px;
+        z-index: 999;
+    }
+    .navbar {
+        
+        height:100vh;
+        width: 100%;
+        background-color: rgb(216, 252, 252);
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         /* to get the tranisition  */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 10;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .navbar ul{
+        
+        flex-direction: column;
+        align-items: center;
+        
+        }
+    .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+    
+     .hamburger .bar {
+        background-color: #00846B;
+        width: 25px;
+        height: 3px;
+        cursor: pointer;
+    }
+
+
+    #home {
+        background-color: #ffc244;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: start;
+        height: auto;
+    }
+    .heading {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    .heading .h-primary {
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        font-size: 57px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .heading p {
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight:300;
+    }
+    
+    .heading .btn {
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background: #00a082;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 5px;
+        align-self:center;
+    }
+    
+    .heading .btn:hover {
+        background: #00846B;
+        cursor: pointer;
+    }
+    .herovdo{
+        display: flex;
+    }
+    .herovdo video{
+        max-width: 250px;
+        
+    }
+
+    #services .services-containers{
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    #services .services-containers .box{
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width:auto;
+    }
+
+    .client .client-containers{
+        display: flex;
+        padding-top: 20px ;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .client .client-containers .box{
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        flex-direction: column-reverse;
+        }
+    .container .menu {
+         display: flex;
+         flex-direction: column;
+         gap: 0px;
+         align-items: start;
+         font-size: 20px;
+         margin-top: 15px;
+         justify-content: start;
+         }
+    textarea {
+            resize: none;
+            height: 80px;
+            width: auto;
+          }
+}

@@ -12,21 +12,30 @@
 
 </head>
 <body>
-<header>
-    <nav id="navbar">
+<header class="header">
+    
         <div id="logo">
             <span>FoodX</span>
         </div>
-        <div class="menu">
+     <nav class="navbar">
+        
         <ul>
             <li class="item"><a href="#home">Home</a></li>
             <li class="item"><a href="#services">Services</a></li>
             <li class="item"><a href="#client">Our Clients</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
+            <button class="btn">Order Now</button>
         </ul>
-        <button class="btn">Order Now</button>
-    </div>
-    </nav>
+    </nav>      
+       
+
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+   
+    
 </header>
   <section id="home">
       <div class="heading">
@@ -128,5 +137,16 @@
     </div>
 
   </section>
+  <script>
+    const mobile_nav = document.querySelector(".hamburger");
+    const nav_header = document.querySelector(".header");
+
+   const toggleNavbar = () => {
+  // alert("Plz Subscribe ");
+  nav_header.classList.toggle("active");
+};
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
+  </script>
 </body>
 </html>
