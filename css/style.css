@@ -4,6 +4,16 @@
     
 }
 
+html {
+    
+    
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
 /* HEADER SEACTION STARTS */
 
 .header {
